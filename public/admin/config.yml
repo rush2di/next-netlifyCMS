@@ -7,57 +7,60 @@ media_folder: public/img
 public_folder: img
 
 collections:
-  - name: "Content"
-    label: "Sanden Økonomi AS"
+  - label: "Hero"
+    name: "hero"
     folder: "content"
+    slug: "hero"
     create: true
     fields:
-      - label: "Hero"
-        name: "hero"
-        file: "content/hero.md"
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Introduction", name: "intro", widget: "text" }
+  - label: "About"
+    name: "about"
+    folder: "content"
+    slug: "about"
+    create: true
+    fields:
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Introduction", name: "intro", widget: "text" }
+      - label: "Info #1"
+        name: "info1"
+        widget: "object"
+        collapsed: true
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Introduction", name: "intro", widget: "text" }
-      - label: "About"
-        name: "about"
-        file: "content/about.md"
+          - { name: "title_info1", label: "Title", widget: "string" }
+          - { name: "desc_info1", label: "Desription", widget: "text" }
+      - label: "Info #2"
+        name: "info1"
+        widget: "object"
+        collapsed: true
         fields:
-          - { label: "Image", name: "image", widget: "image" }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Introduction", name: "intro", widget: "text" }
-          - label: "Info #1"
-            name: "info1"
-            widget: "object"
-            collapsed: true
-            fields:
-              - { name: "title_info1", label: "Title", widget: "string" }
-              - { name: "desc_info1", label: "Desription", widget: "text" }
-          - label: "Info #2"
-            name: "info1"
-            widget: "object"
-            collapsed: true
-            fields:
-              - { name: "title_info2", label: "Title", widget: "string" }
-              - { name: "desc_info2", label: "Description", widget: "text" }
-      - label: "Services"
-        name: "services"
-        file: "content/services.md"
+          - { name: "title_info2", label: "Title", widget: "string" }
+          - { name: "desc_info2", label: "Description", widget: "text" }
+  - label: "Services"
+    name: "services"
+    folder: "content"
+    slug: "services"
+    create: true
+    fields:
+      - { label: "Intro", name: "intro", widget: "string" }
+      - label: "Services List #1"
+        name: "list1"
+        widget: "list"
         fields:
-          - { label: "Intro", name: "intro", widget: "string" }
-          - label: "Services List #1"
-            name: "list1"
-            widget: "list"
-            fields:
-              - { label: "Service", name: "service", widget: "string" }
-          - label: "Services List #2"
-            name: "list2"
-            widget: "list"
-            fields:
-              - { label: "Service", name: "service", widget: "string" }
-      - label: "Book Appoinment"
-        name: "bookapp"
-        file: "content/bookapp.md"
+          - { label: "Service", name: "service", widget: "string" }
+      - label: "Services List #2"
+        name: "list2"
+        widget: "list"
         fields:
-          - { label: "Image", name: "image", widget: "image" }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Introduction", name: "intro", widget: "text" }
+          - { label: "Service", name: "service", widget: "string" }
+  - label: "Book Appoinment"
+    name: "bookapp"
+    folder: "content"
+    slug: "bookapp"
+    create: true
+    fields:
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Introduction", name: "intro", widget: "text" }
