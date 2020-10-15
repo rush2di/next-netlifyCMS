@@ -10,17 +10,31 @@ collections:
   - label: "Hero"
     name: "hero"
     folder: "content"
+    identifier_field: templateKey
     slug: "hero"
     create: true
     fields:
+      - {
+          label: "TemplateKey",
+          name: "templateKey",
+          widget: "hidden",
+          default: "hero-section",
+        }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Introduction", name: "intro", widget: "text" }
   - label: "About"
     name: "about"
     folder: "content"
+    identifier_field: templateKey
     slug: "about"
     create: true
     fields:
+      - {
+          label: "TemplateKey",
+          name: "templateKey",
+          widget: "hidden",
+          default: "about-section",
+        }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Introduction", name: "intro", widget: "text" }
@@ -41,9 +55,16 @@ collections:
   - label: "Services"
     name: "services"
     folder: "content"
+    identifier_field: templateKey
     slug: "services"
     create: true
     fields:
+      - {
+          label: "TemplateKey",
+          name: "templateKey",
+          widget: "hidden",
+          default: "services-section",
+        }
       - { label: "Intro", name: "intro", widget: "string" }
       - label: "Services List #1"
         name: "list1"
@@ -58,9 +79,33 @@ collections:
   - label: "Book Appoinment"
     name: "bookapp"
     folder: "content"
+    identifier_field: templateKey
     slug: "bookapp"
     create: true
     fields:
+      - {
+          label: "TemplateKey",
+          name: "templateKey",
+          widget: "hidden",
+          default: "bookapp-section",
+        }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Introduction", name: "intro", widget: "text" }
+  - label: "General Info"
+    name: "info"
+    folder: "content"
+    identifier_field: "templateKey"
+    slug: "general-info"
+    create: true
+    fields:
+      - {
+          label: "TemplateKey",
+          name: "templateKey",
+          widget: "hidden",
+          default: "general-information",
+        }
+      - { label: "Facebook Link", name: "facebook", widget: "string" }
+      - { label: "Email", name: "email", widget: "string" }
+      - { label: "Telephone", name: "telephone", widget: "string" }
+      - { label: "Address", name: "address", widget: "string" }
