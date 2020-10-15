@@ -1,0 +1,62 @@
+backend:
+    name: git-gateway
+    branch: main
+
+
+  publish_mode: editorial_workflow
+  media_folder: public/img
+  public_folder: img
+
+  collections:
+    - name: "Content"
+      label: "Sanden Økonomi AS"
+      files:
+      - label: "Hero"
+        name: "hero"
+        file: "content/hero.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string"}
+          - { label: "Introduction", name: "intro", widget: "text" }
+      - label: "About"
+        name: "about"
+        file: "content/hero.md"
+        fields:
+          - { label: "Image", name: "image", widget: "image"}
+          - { label: "Title", name: "title", widget: "string"}
+          - { label: "Introduction", name: "intro", widget: "text" }
+          - label: "Info #1"
+            name: "info1"
+            widget: "object"
+            collapsed: true
+            fields:
+                - { name: "title_info1", label: "Title", widget: "string" }
+                - { name: "desc_info1", label: "Desription", widget: "text"}
+          - label: "Info #2"
+            name: "info1"
+            widget: "object"
+            collapsed: true
+            fields:
+                - { name: "title_info2", label: "Title", widget: "string" }
+                - { name: "desc_info2", label: "Description", widget: "text"}
+      - label: "Services"
+        name: "services"
+        file: "content/services.md"
+        fields: 
+            - { label: "Intro", name: "intro", widget: "string"}
+            - label: "Services List #1"
+              name: "list1"
+              widget: "list"
+              fields:
+                - { label: "Service", name: "service", widget: "string"}
+            - label: "Services List #2"
+              name: "list2"
+              widget: "list"
+              fields:
+                - { label: "Service", name: "service", widget: "string"}
+      - label: "Book Appoinment"
+        name: "bookapp"
+        file: "content/bookapp.md"
+        fields:
+            - { label: "Image", name: "image", widget: "image"}
+            - { label: "Title", name: "title", widget: "string"}
+            - { label: "Introduction", name: "intro", widget: "text" }
