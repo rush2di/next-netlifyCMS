@@ -3,7 +3,6 @@ backend:
     branch: main
 
 
-  publish_mode: editorial_workflow
   media_folder: public/img
   public_folder: img
 
