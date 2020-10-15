@@ -9,7 +9,9 @@ public_folder: img
 collections:
   - name: "Content"
     label: "Sanden Økonomi AS"
-    files:
+    folder: "content"
+    create: true
+    fields:
       - label: "Hero"
         name: "hero"
         file: "content/hero.md"
@@ -18,7 +20,7 @@ collections:
           - { label: "Introduction", name: "intro", widget: "text" }
       - label: "About"
         name: "about"
-        file: "content/hero.md"
+        file: "content/about.md"
         fields:
           - { label: "Image", name: "image", widget: "image" }
           - { label: "Title", name: "title", widget: "string" }
