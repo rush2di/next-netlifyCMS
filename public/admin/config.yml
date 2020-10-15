@@ -9,7 +9,7 @@ public_folder: img
 collections:
   - label: "Hero"
     name: "hero"
-    folder: "content"
+    folder: "content/hero"
     identifier_field: templateKey
     slug: "hero"
     create: true
@@ -24,7 +24,7 @@ collections:
       - { label: "Introduction", name: "intro", widget: "text" }
   - label: "About"
     name: "about"
-    folder: "content"
+    folder: "content/about"
     identifier_field: templateKey
     slug: "about"
     create: true
@@ -54,7 +54,7 @@ collections:
           - { name: "desc_info2", label: "Description", widget: "text" }
   - label: "Services"
     name: "services"
-    folder: "content"
+    folder: "content/services"
     identifier_field: templateKey
     slug: "services"
     create: true
@@ -78,7 +78,7 @@ collections:
           - { label: "Service", name: "service", widget: "string" }
   - label: "Book Appoinment"
     name: "bookapp"
-    folder: "content"
+    folder: "content/bookapp"
     identifier_field: templateKey
     slug: "bookapp"
     create: true
@@ -94,7 +94,7 @@ collections:
       - { label: "Introduction", name: "intro", widget: "text" }
   - label: "General Info"
     name: "info"
-    folder: "content"
+    folder: "content/info"
     identifier_field: "templateKey"
     slug: "general-info"
     create: true
