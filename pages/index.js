@@ -1,4 +1,5 @@
 import dynamic from "next/dynamic";
+import { useEffect } from "react";
 
 import About from "../components/About";
 import Book from "../components/Book";
@@ -6,7 +7,7 @@ import Hero from "../components/Hero";
 import Layout from "../components/Layout";
 import Services from "../components/Services";
 
-const ClientSideLeaftletMap = dynamic(() => import("../components/Map"), {
+const ClientSideMap = dynamic(() => import("../components/Map"), {
   ssr: false,
 });
 
@@ -26,13 +27,25 @@ const Index = (props) => {
     thumbnail: aboutContent.image,
   };
 
+  useEffect(() => {
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", (user) => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  }, []);
+
   return (
     <Layout headerSEO={headerSEO} info={infoContent}>
       <Hero content={heroContent} />
       <About content={aboutContent} />
       <Services content={servicesContent} />
-      <Book content={bookContent} />
-      <ClientSideLeaftletMap />
+      <Book email={infoContent.email} content={bookContent} />
+      <ClientSideMap />
     </Layout>
   );
 };

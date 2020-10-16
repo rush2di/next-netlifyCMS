@@ -7,8 +7,10 @@ const Hero = ({ content }) => (
         <Logo />
       </div>
       <div className="text-content">
-        <h1 className="heading heading-lg">{content.title}</h1>
-        <p className="paragraph">{content.intro}</p>
+        <div>
+          <h1 className="heading heading-lg">{content.title}</h1>
+          <p className="paragraph">{content.intro}</p>
+        </div>
       </div>
     </div>
   </div>

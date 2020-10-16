@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Logo from "../static/images/logoSIMPLE.svg";
 
 const Footer = ({ content }) => (
-  <footer>
+  <footer id="kontakt-oss">
     <div className="container">
       <div className="block-grid-3">
         <div className="logo-wrapper">
@@ -13,13 +13,13 @@ const Footer = ({ content }) => (
           <ul>
             <li>
               <div className="flex">
-                <FontAwesomeIcon icon={["fas", "phone"]} />
-                <p>{content.telephone}</p>
+                <FontAwesomeIcon icon={["fas", "phone"]} className="icon" />
+                <a href={`tel:${content.telephone}`}>{content.telephone}</a>
               </div>
             </li>
             <li>
               <div className="flex">
-                <FontAwesomeIcon icon={["fas", "envelope"]} />
+                <FontAwesomeIcon icon={["fas", "envelope"]} className="icon" />
                 <a href={`mailto:${content.email}`}>{content.email}</a>
               </div>
             </li>
@@ -29,7 +29,10 @@ const Footer = ({ content }) => (
           <ul>
             <li>
               <div className="flex">
-                <FontAwesomeIcon icon={["fab", "facebook-square"]} />
+                <FontAwesomeIcon
+                  icon={["fab", "facebook-square"]}
+                  className="icon"
+                />
                 <a
                   href={content.facebook}
                   target="_blank"
@@ -41,7 +44,10 @@ const Footer = ({ content }) => (
             </li>
             <li>
               <div className="flex">
-                <FontAwesomeIcon icon={["fas", "map-marker-alt"]} />
+                <FontAwesomeIcon
+                  icon={["fas", "map-marker-alt"]}
+                  className="icon"
+                />
                 <p>{content.address}</p>
               </div>
             </li>

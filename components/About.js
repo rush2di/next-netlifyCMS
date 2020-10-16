@@ -1,5 +1,5 @@
 const About = ({ content }) => (
-  <div className="about-section">
+  <div className="about-section" id="om-oss">
     <div className="container">
       <div className="text-content-wrapper">
         <div className="block">

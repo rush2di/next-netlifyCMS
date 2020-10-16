@@ -1,4 +1,5 @@
 import Logo from "../static/images/logoSIMPLE.svg";
+import Button from "./Button";
 
 const Navbar = ({ email }) => {
   return (
@@ -21,9 +22,7 @@ const Navbar = ({ email }) => {
             <a href="#kontakt-oss">Kontakt oss</a>
           </li>
           <li>
-            <a href={`mailto:${email}`}>
-              <button className="btn btn-md">BOOK MØTE</button>
-            </a>
+            <Button email={email} />
           </li>
         </ul>
       </div>

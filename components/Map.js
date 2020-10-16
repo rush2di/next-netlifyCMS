@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Map, TileLayer, Marker, Popup } from "react-leaflet";
 
-const ContactMap = ({ lang }) => {
+const ContactMap = () => {
   const [state] = useState({
-    center: [58.5589151, 5.7382733],
-    zoom: 15,
+    center: [58.2504528, 8.3750369],
+    zoom: 17,
   });
 
   return (
@@ -16,8 +16,8 @@ const ContactMap = ({ lang }) => {
         />
         <Marker position={state.center}>
           <Popup>
-            Stokkalandssvingen
-            <br /> 15 4362 Vigrestad
+            Østregate 10,
+            <br /> 4790 Lillesand
             <br /> Norge
           </Popup>
         </Marker>
