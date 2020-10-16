@@ -67,7 +67,15 @@ const Footer = ({ content }) => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            Reeitdesign
+            REEIT DESIGN
+          </a>
+          /
+          <a
+            href="https://www.jrdesign.no"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            JR DESIGN AS
           </a>
         </span>
       </div>
