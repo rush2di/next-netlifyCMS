@@ -9,11 +9,18 @@
     "export": "npm run build && next export"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-brands-svg-icons": "^5.15.1",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.11",
     "autoprefixer": "^9.5.1",
+    "leaflet": "^1.7.1",
     "next": "9.5.5",
     "postcss-easy-import": "^3.0.0",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "react-leaflet": "^2.7.0",
+    "uuid": "^8.3.1"
   },
   "devDependencies": {
     "babel": "^6.23.0",

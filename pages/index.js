@@ -1,6 +1,14 @@
+import dynamic from "next/dynamic";
+
 import About from "../components/About";
+import Book from "../components/Book";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout";
+import Services from "../components/Services";
+
+const ClientSideLeaftletMap = dynamic(() => import("../components/Map"), {
+  ssr: false,
+});
 
 const Index = (props) => {
   console.log(props);
@@ -22,6 +30,9 @@ const Index = (props) => {
     <Layout headerSEO={headerSEO} info={infoContent}>
       <Hero content={heroContent} />
       <About content={aboutContent} />
+      <Services content={servicesContent} />
+      <Book content={bookContent} />
+      <ClientSideLeaftletMap />
     </Layout>
   );
 };

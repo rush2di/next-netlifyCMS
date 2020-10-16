@@ -9,20 +9,16 @@ const About = ({ content }) => (
         <div className="block">
           <div className="block-heading">
             <img src="../static/images/assetsico1.png" />
-            <h3 className="heading heading-sm">
-              {/*content.info1.title_info1*/}
-            </h3>
+            <h3 className="heading heading-sm">{content.info1.title_info1}</h3>
           </div>
-          <p className="paragraph">{/*content.info1.desc_info1*/}</p>
+          <p className="paragraph">{content.info1.desc_info1}</p>
         </div>
         <div className="block">
           <div className="block-heading">
             <img src="../static/images/assetsico2.png" />
-            <h3 className="heading heading-sm">
-              {/*content.info2.title_info2*/}
-            </h3>
+            <h3 className="heading heading-sm">{content.info2.title_info2}</h3>
           </div>
-          <p className="paragraph">{/*content.info2.desc_info2*/}</p>
+          <p className="paragraph">{content.info2.desc_info2}</p>
         </div>
       </div>
       <div className="image-wrapper">
