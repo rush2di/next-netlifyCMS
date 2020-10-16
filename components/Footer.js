@@ -34,7 +34,11 @@ const Footer = ({ content }) => (
                   className="icon"
                 />
                 <a
-                  href={content.facebook}
+                  href={
+                    content.facebook.includes("https://")
+                      ? content.facebook
+                      : `https://${content.facebook}`
+                  }
                   target="_blank"
                   rel="noopener noreferrer"
                 >
