@@ -46,7 +46,7 @@ collections:
           - { name: "title_info1", label: "Title", widget: "string" }
           - { name: "desc_info1", label: "Desription", widget: "text" }
       - label: "Info #2"
-        name: "info1"
+        name: "info2"
         widget: "object"
         collapsed: true
         fields:

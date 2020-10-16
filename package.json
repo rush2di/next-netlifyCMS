@@ -9,6 +9,7 @@
     "export": "npm run build && next export"
   },
   "dependencies": {
+    "autoprefixer": "^9.5.1",
     "next": "9.5.5",
     "postcss-easy-import": "^3.0.0",
     "react": "16.13.1",
