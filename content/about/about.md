@@ -9,6 +9,11 @@ intro: >-
   kundene våre enklere og mer effektiv. Alle bilag lastes rett opp i skyen og
   dere kan si farvel til fakturaer i ringpermer og papirkvitteringer på avveie.
 info1:
+  desc_info1: >-
+    Våre medarbeidere har lang erfaring fra regnskapsbransjen. Vi legger vekt på
+    å være en god samtalepartner og en problemløser for kundene våre.
+  title_info1: Hva gjør vi
+info2:
   desc_info2: 'Vi holder til i Lillesand, men har kunder fra hele landet.'
   title_info2: Hvor er vi
 ---
