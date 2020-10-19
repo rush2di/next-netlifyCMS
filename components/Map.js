@@ -3,7 +3,7 @@ import { Map, TileLayer, Marker, Popup } from "react-leaflet";
 
 const ContactMap = () => {
   const [state] = useState({
-    center: [58.2504528, 8.3750369],
+    center: [58.2504229, 8.3771576],
     zoom: 17,
   });
 

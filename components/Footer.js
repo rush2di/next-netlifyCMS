@@ -63,14 +63,6 @@ const Footer = ({ content }) => (
         <span>
           design & utvikling av{" "}
           <a
-            href="https://www.reeitdesign.no"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            REEIT DESIGN
-          </a>
-          /
-          <a
             href="https://www.jrdesign.no"
             target="_blank"
             rel="noopener noreferrer"
