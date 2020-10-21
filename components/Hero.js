@@ -3,8 +3,8 @@ import Logo from "../static/images/logoCLG.svg";
 const Hero = ({ content }) => (
   <div className="hero-section">
     <div className="container">
-      <div className="logo-wrapper">
-        <Logo />
+      <div className="cover-wrapper">
+        <img src="../static/images/heroCover.jpg" />
       </div>
       <div className="text-content">
         <div>

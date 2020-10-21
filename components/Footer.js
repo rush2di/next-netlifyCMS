@@ -30,25 +30,6 @@ const Footer = ({ content }) => (
             <li>
               <div className="flex">
                 <FontAwesomeIcon
-                  icon={["fab", "facebook-square"]}
-                  className="icon"
-                />
-                <a
-                  href={
-                    content.facebook.includes("https://")
-                      ? content.facebook
-                      : `https://${content.facebook}`
-                  }
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Facebook
-                </a>
-              </div>
-            </li>
-            <li>
-              <div className="flex">
-                <FontAwesomeIcon
                   icon={["fas", "map-marker-alt"]}
                   className="icon"
                 />

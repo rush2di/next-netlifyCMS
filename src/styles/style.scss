@@ -232,6 +232,7 @@ nav {
       text-align: center;
       justify-content: center;
       margin: auto;
+      height: 570px;
     }
     @media screen and (max-width: 520px) {
       padding-top: 2rem;
@@ -240,22 +241,24 @@ nav {
       width: 95%;
     }
   }
-  .logo-wrapper,
+  .cover-wrapper,
   .text-content {
     display: flex;
     align-items: center;
   }
-  .logo-wrapper {
-    justify-content: flex-start;
-  }
-  .logo-wrapper svg {
-    margin-left: 3.25rem;
-    @media screen and (max-width: 1230px) {
-      width: 65%;
-    }
+  .cover-wrapper {
     @media screen and (max-width: 920px) {
-      width: 75%;
-      margin: auto;
+      align-items: stretch;
+    }
+  }
+  .cover-wrapper img {
+    width: 90%;
+    @media screen and (max-width: 920px) {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      object-position: bottom;
+      margin: 2rem 0;
     }
   }
   .text-content {
@@ -453,6 +456,12 @@ footer {
     padding-top: 4rem;
     padding-bottom: 4rem;
     grid-template-columns: repeat(3, 1fr);
+    @media screen and (max-width: 1230px) and (min-width: 750px) {
+      .block:last-of-type ul {
+        align-self: baseline !important;
+        margin-top: 1.25rem !important;
+      }
+    }
     @media screen and (max-width: 1230px) {
       padding-bottom: 8rem;
     }
