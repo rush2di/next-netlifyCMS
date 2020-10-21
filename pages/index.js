@@ -12,8 +12,6 @@ const ClientSideMap = dynamic(() => import("../components/Map"), {
 });
 
 const Index = (props) => {
-  console.log(props);
-
   const {
     heroContent,
     aboutContent,
