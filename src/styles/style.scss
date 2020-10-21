@@ -456,12 +456,6 @@ footer {
     padding-top: 4rem;
     padding-bottom: 4rem;
     grid-template-columns: repeat(3, 1fr);
-    @media screen and (max-width: 1230px) and (min-width: 750px) {
-      .block:last-of-type ul {
-        align-self: baseline !important;
-        margin-top: 1.25rem !important;
-      }
-    }
     @media screen and (max-width: 1230px) {
       padding-bottom: 8rem;
     }
