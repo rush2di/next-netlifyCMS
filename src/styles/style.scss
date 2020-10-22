@@ -304,12 +304,9 @@ nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     @media screen and (max-width: 745px) {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      flex-direction: column-reverse;
-      -webkit-flex-direction: column-reverse;
+      display: grid;
+      grid-template-columns: none;
+      grid-template-rows: auto 1fr;
       align-items: stretch;
       -webkit-align-items: stretch;
     }
@@ -321,6 +318,9 @@ nav {
     display: flex;
     justify-content: flex-end;
     -webkit-justify-content: flex-end;
+    @media screen and (max-width: 745px) {
+      grid-area: 1;
+    }
   }
   .image-wrapper img {
     min-height: 524px;
@@ -361,10 +361,8 @@ nav {
     margin-top: 1.5rem;
   }
   .text-content-wrapper .block .block-heading {
-    display: flex;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
     -webkit-align-items: center;
     margin-bottom: 0.75rem;
@@ -637,6 +635,21 @@ footer {
     }
     .block-grid-3 {
       padding-bottom: 4rem;
+      grid-template-columns: none;
+      grid-column-gap: 0;
+      -webkit-column-gap: 0;
+      -moz-column-gap: 0;
+      column-gap: 0;
+      grid-row-gap: 0;
+      row-gap: 0;
+      -webkit-row-gap: 0;
+      -moz-row-gap: 0;
+    }
+    .block-grid-3 .logo-wrapper {
+      margin-bottom: 1.5rem;
+    }
+    .block-grid-3 .block {
+      margin-bottom: 1.5rem;
     }
     .block-grid-3 .logo-wrapper svg {
       margin-left: 2rem;
